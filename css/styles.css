@@ -50,6 +50,64 @@ body {
     word-break: break-all;
 }
 
+/* MODAL STYLES */
+.modal-bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    opacity: 0.5;
+}
+.modal-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.modal-bg-overlay,
+.modal-container {
+    display: none;
+}
+.modal {
+    /* opacity: 0.5; */
+    z-index: 10000;
+    background-color: white;
+    margin-bottom: 15rem;
+    text-align: center;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 33vw;
+    min-height: 55vh;
+}
+.modal-x {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    padding: 0.5rem;
+}
+.modal-x:hover {
+    cursor: pointer;
+}
+.modal-img {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+
+/* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
     .card-container {
         grid-template-columns: 1fr 1fr;

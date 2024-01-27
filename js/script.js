@@ -38,3 +38,13 @@ async function getRandomUsers() {
 }
 
 getRandomUsers();
+
+// TODOS:
+// + Employees can be filtered by name
+// + Modal window displays image, name, email, cell number, detailed address
+//   (including street name and number, city, state and post code), birthdate
+// + There is a way to close the modal window
+// + Functionality has been added to switch back and forth between employees
+//   when the detail modal window is open
+// + Directory has been styled so that all the major elements are in place and
+//   roughly matches the mockups
