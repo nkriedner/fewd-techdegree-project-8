@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .card-container {
     width: 95vw;
     margin: auto;
@@ -14,14 +18,36 @@
 }
 
 .employee-card {
-    height: 150px;
+    min-height: 150px;
+    display: flex;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 3px solid gray;
+    background-color: white;
 }
 
-.employee-card:nth-of-type(even) {
-    background-color: green;
+.employee-img {
+    width: 125px;
+    height: 125px;
+    border-radius: 100%;
 }
-.employee-card:nth-of-type(odd) {
-    background-color: red;
+
+.employee-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.employee-infos span {
+    color: gray;
+
+    display: inline-block;
+}
+
+.employee-email {
+    margin: 0.5rem 0;
+    word-break: break-all;
 }
 
 @media screen and (min-width: 768px) {
