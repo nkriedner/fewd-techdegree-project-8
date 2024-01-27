@@ -4,3 +4,34 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.card-container {
+    width: 95vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+.employee-card {
+    height: 150px;
+}
+
+.employee-card:nth-of-type(even) {
+    background-color: green;
+}
+.employee-card:nth-of-type(odd) {
+    background-color: red;
+}
+
+@media screen and (min-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .card-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
