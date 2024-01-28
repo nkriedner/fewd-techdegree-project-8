@@ -147,4 +147,3 @@ document.querySelector("body").addEventListener("click", (e) => {
 // TODOS:
 // + Directory has been styled so that all the major elements are in place and
 //   roughly matches the mockups
-// + Change and update birthday date format
