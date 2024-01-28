@@ -20,7 +20,7 @@ function createModalHTML(randomUserData, userData, cardIndex) {
     const modalHTML = `
                 <div class="modal">
                     <span class="modal-x">X</span>
-                    <img class="modal-img" src="${userData.picture.medium}" />
+                    <img class="modal-img" src="${userData.picture.large}" />
                     <h2 class="modal-name">${userData.name.first} ${userData.name.last}</h2>
                     <span class="modal-email">${userData.email}</span>
                     <span class="modal-city">${userData.location.city}</span>
