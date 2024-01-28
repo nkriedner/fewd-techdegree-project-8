@@ -169,13 +169,15 @@ header input {
 }
 
 @media screen and (min-width: 1024px) {
-    body {
-        padding: 4rem 8rem;
-    }
     .card-container {
         grid-template-columns: 1fr 1fr 1fr;
     }
     .modal {
         min-width: 35%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    body {
+        padding: 4rem;
     }
 }
