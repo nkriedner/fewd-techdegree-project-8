@@ -55,7 +55,8 @@ body {
 
 /* MODAL STYLES */
 .modal-bg-overlay {
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
@@ -64,7 +65,8 @@ body {
     opacity: 0.5;
 }
 .modal-container {
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
@@ -108,6 +110,22 @@ body {
     background-color: red;
     border-radius: 100%;
     margin: 0 auto;
+}
+.previous-profile,
+.next-profile {
+    font-size: 3rem;
+    position: absolute;
+    bottom: 0;
+}
+.previous-profile:hover,
+.next-profile:hover {
+    cursor: pointer;
+}
+.previous-profile {
+    left: 0;
+}
+.next-profile {
+    right: 0;
 }
 
 /* MEDIA QUERIES */
