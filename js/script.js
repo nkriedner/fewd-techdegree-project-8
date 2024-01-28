@@ -2,6 +2,20 @@ const modalBgOverlay = document.querySelector(".modal-bg-overlay");
 const modalContainer = document.querySelector(".modal-container");
 
 function createModalHTML(randomUserData, userData, cardIndex) {
+    // format birthday date (credit & thanks to stackoverflow):
+    const birthday = new Date(userData.dob.date);
+    const yyyy = birthday.getFullYear();
+    let mm = birthday.getMonth() + 1; // Months start at 0!
+    let dd = birthday.getDate();
+    if (dd < 10) {
+        dd = "0" + dd;
+    }
+    if (mm < 10) {
+        mm = "0" + mm;
+    }
+    const formattedBirthday = dd + "/" + mm + "/" + yyyy;
+    console.log(formattedBirthday);
+
     // create the modal with user data content:
     const modalHTML = `
                 <div class="modal">
@@ -13,7 +27,7 @@ function createModalHTML(randomUserData, userData, cardIndex) {
                     <hr />
                     <span class="modal-phone">${userData.phone}</span>
                     <span class="modal-address">${userData.location.street.number} ${userData.location.street.name}, ${userData.location.state} ${userData.location.postcode}</span>
-                    <span class="modal-birthday">Birthday: ${userData.dob.date}</span>
+                    <span class="modal-birthday">Birthday: ${formattedBirthday}</span>
                     <span class="previous-profile">&lAarr;</span>
                     <span class="next-profile">&rAarr;</span>
                 </div>
