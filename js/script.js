@@ -82,12 +82,26 @@ async function getRandomUsers() {
                 modalContainer.style.display = "none";
             });
             // console.log(modalBgOverlay);
+        });
+    });
 
-            modalContainer.addEventListener("click", () => {
-                // console.log("click", e.target);
-                // modalBgOverlay.style.display = "none";
-                // modalContainer.style.display = "none";
-            });
+    // SEARCH EMPLOYEES FUNCTIONALITY:
+    const searchInput = document.getElementById("search-input");
+    searchInput.addEventListener("keyup", (e) => {
+        let inputValue = e.target.value.toLowerCase();
+        console.log(inputValue);
+
+        // check if value is in employees names:
+        randomUserData.forEach((user, index) => {
+            if (
+                user.name.first.toLowerCase().includes(inputValue) ||
+                user.name.last.toLowerCase().includes(inputValue)
+            ) {
+                console.log(user.name.first + " " + user.name.last);
+                employeeCards[index].style.display = "flex";
+            } else {
+                employeeCards[index].style.display = "none";
+            }
         });
     });
 }
