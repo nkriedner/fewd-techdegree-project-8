@@ -7,6 +7,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 1rem;
+    background-image: linear-gradient(to right, #b6fbff, #83a4d4);
 }
 
 /* HEADER STYLES */
@@ -40,14 +41,14 @@ header input {
     display: flex;
     padding: 1.5rem;
     border-radius: 10px;
-    border: 3px solid gray;
+    border: 3px solid #83a4d4;
     background-color: white;
     transition: all 0.5s;
 }
 .employee-card:hover {
     cursor: pointer;
-    background-color: #e6f5ff;
-    transform: scale(1.025);
+    transform: scale(1.015);
+    border-color: hsl(216, 66%, 43%);
 }
 .employee-img {
     width: 125px;

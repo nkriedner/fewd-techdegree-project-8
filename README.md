@@ -11,3 +11,5 @@ Starter files in Commit 1 were provided, the rest of the code and files were cre
 I received an "Exceeds Expectation" grade upon submitting the project.
 
 The png-images in the starter-files directory show how the project should look like.
+
+View live page: https://nkriedner.github.io/fewd-techdegree-project-8/
